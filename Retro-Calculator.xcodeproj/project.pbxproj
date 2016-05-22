@@ -12,6 +12,8 @@
 		7E5CF5B71CF012EF00D8E3E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF5B51CF012EF00D8E3E3 /* Main.storyboard */; };
 		7E5CF5B91CF012EF00D8E3E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF5B81CF012EF00D8E3E3 /* Assets.xcassets */; };
 		7E5CF5BC1CF012EF00D8E3E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF5BA1CF012EF00D8E3E3 /* LaunchScreen.storyboard */; };
+		7E5CF5C41CF0211D00D8E3E3 /* RvD_CODE28.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF5C31CF020E600D8E3E3 /* RvD_CODE28.ttf */; };
+		7E5CF5C61CF1692200D8E3E3 /* jingles_NES01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CF5C51CF1692200D8E3E3 /* jingles_NES01.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7E5CF5B81CF012EF00D8E3E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5CF5BB1CF012EF00D8E3E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5CF5BD1CF012EF00D8E3E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5CF5C31CF020E600D8E3E3 /* RvD_CODE28.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RvD_CODE28.ttf; path = ../RvD_CODE28.ttf; sourceTree = "<group>"; };
+		7E5CF5C51CF1692200D8E3E3 /* jingles_NES01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jingles_NES01.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		7E5CF5B01CF012EF00D8E3E3 /* Retro-Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				7E5CF5C51CF1692200D8E3E3 /* jingles_NES01.wav */,
+				7E5CF5C31CF020E600D8E3E3 /* RvD_CODE28.ttf */,
 				7E5CF5B11CF012EF00D8E3E3 /* AppDelegate.swift */,
 				7E5CF5B31CF012EF00D8E3E3 /* ViewController.swift */,
 				7E5CF5B51CF012EF00D8E3E3 /* Main.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					7E5CF5AD1CF012EF00D8E3E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RY8CLVLV33;
 					};
 				};
 			};
@@ -123,7 +130,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E5CF5BC1CF012EF00D8E3E3 /* LaunchScreen.storyboard in Resources */,
+				7E5CF5C61CF1692200D8E3E3 /* jingles_NES01.wav in Resources */,
 				7E5CF5B91CF012EF00D8E3E3 /* Assets.xcassets in Resources */,
+				7E5CF5C41CF0211D00D8E3E3 /* RvD_CODE28.ttf in Resources */,
 				7E5CF5B71CF012EF00D8E3E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Retro-Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twofivecoders.Retro-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Retro-Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twofivecoders.Retro-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
