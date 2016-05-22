@@ -249,7 +249,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="434567" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBz-rN-z3w">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBz-rN-z3w">
                                 <rect key="frame" x="184" y="98" width="223" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="YzZ-yL-EaK"/>
@@ -310,7 +310,7 @@
                     </subviews>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="292" y="364"/>
+            <point key="canvasLocation" x="201" y="354"/>
         </scene>
     </scenes>
     <resources>
