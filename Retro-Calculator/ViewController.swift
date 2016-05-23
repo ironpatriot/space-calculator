@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         case Subtract = "-"
         case Add = "+"
         case Empty = "Empty"
+        case Clear = "Clear"
     }
     
     @IBOutlet weak var outputLbl: UILabel!
@@ -51,6 +52,7 @@ class ViewController: UIViewController {
      playSound()
         
      runningNumber += "\(btn.tag)"
+    
      outputLbl.text = runningNumber
     
     }
@@ -79,9 +81,20 @@ class ViewController: UIViewController {
         processOperation(currentOperation)
     }
     
+    @IBAction func clearButton(sender: UIButton) {
+    
+        currentOperation =  Operation.Empty
+        rightVarString = " "
+        leftValString = " "
+        result = " "
+        outputLbl.text = "0"
+        playSound()
+    }
+    
+    
     func processOperation(op: Operation) {
         playSound()
-        
+
         if currentOperation != Operation.Empty {
              // Run some math
             
@@ -89,13 +102,13 @@ class ViewController: UIViewController {
             // first entering a number
             if runningNumber != "" {
             
-            }
             rightVarString = runningNumber
             runningNumber = ""
             
             if currentOperation == Operation.Multiply {
             
                 result = "\(Double(leftValString)! * Double(rightVarString)!)"
+                
             
             } else if currentOperation == Operation.Divide {
             
@@ -110,9 +123,12 @@ class ViewController: UIViewController {
                 result = "\(Double(leftValString)! + Double(rightVarString)!)"
             
             }
+                
             
             leftValString = result
             outputLbl.text = result
+            
+        }
             
             currentOperation = op
             
@@ -134,5 +150,7 @@ class ViewController: UIViewController {
     
         buttonSound.play()
     }
+    
+    
 }
 
